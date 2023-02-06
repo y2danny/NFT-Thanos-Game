@@ -47,7 +47,7 @@ export const GlobalContextProvider = ({ children }) => {
 
     resetParams();
 
-    window?.ethereum?.on('chainChanged', () => resetParams());
+    window.ethereum.on('chainChanged', () => resetParams());
     window?.ethereum?.on('accountsChanged', () => resetParams());
   }, []);
 
